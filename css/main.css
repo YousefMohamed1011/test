@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+    font-family: "Cairo", serif;
+}
+body {
+  direction: rtl;
+  background-color: #ffffff;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* start sign-in */
+.form {
+  margin: auto;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 1px solid #7d828e;
+  padding: 20px;
+  max-width:90%;
+}
+
+.form .sign-in {
+  width: 50%;
+}
+
+.sign-in .title h2 {
+  color: #37b000;
+}
+
+.sign-in .title p {
+  line-height: 1.5;
+  font-size: 15px;
+  color: #7d828e;
+}
+
+.sign-in .input {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in .input input,
+.sign-in .input .textarea {
+  background: none;
+  outline: 0;
+  border-radius: 12px;
+  border: 1px solid #7d828e;
+  padding: 8px 4px;
+  margin-top: 15px;
+}
+.sign-in .input .textarea{
+  resize: none ;
+  height:135px;
+}
+.sign-in .input input::placeholder {
+  font-size: 12px;
+}
+
+.form .sign-in .submit {
+  margin-top: 13px;
+}
+
+.form .sign-in .submit button {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #37b000;
+  padding: 5px 15px;
+  border: 1px solid #37b000;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.form .sign-in .submit button:hover {
+  background-color: transparent;
+  color: #37b000;
+}
+/* end sign-in  */
+/* start contact-us */
+.form .contact-us{
+  padding: 15px;
+  text-align: center;
+  margin:0 auto;
+  width: 50%;
+}
+.form .img img{
+  width:300px;
+}
+.form .location{
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+}
+.location a{
+  color: #70706f;
+}
+.location span {
+  margin-right: 10px;
+  color: #37b000;
+}
+/* end contact-us */
+/* response design  */
+@media (max-width:880px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form .sign-in {
+    width: 100%;
+  }
+    .form .img img{
+      width: 100%;
+    }
+        .form .contact-us{
+          width: 100%;
+        }
+        .form .location {
+          text-align: right;
+        }
+    
+
+}
+/* response design  */
